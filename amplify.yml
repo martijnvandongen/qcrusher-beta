@@ -1,0 +1,22 @@
+version: 0.1
+env:
+  variables:
+    HUGO_VERSION: "0.128.1"
+frontend:
+  phases:
+    build:
+      commands:
+        - cd src
+        - wget --quiet https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        - tar -xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz hugo
+        - mv hugo /usr/bin/hugo
+        - rm -rf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        - which hugo
+        - hugo version
+        - hugo
+  artifacts:
+    baseDirectory: /public/
+    files:
+      - '**/*'
+  cache:
+    paths: []

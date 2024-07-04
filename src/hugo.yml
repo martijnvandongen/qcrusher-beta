@@ -1,0 +1,14 @@
+baseURL: "https://martijnvandongen.github.io/qcrusher-beta/"
+title: "QCrusher.com"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # allow inline html in markdown
+# hugo now supports native syntax highlighting, but some settings should be enabled
+# code fences is there to support ```python print("here") ``` in markdown (.md)
+pygmentsCodeFences: true
+# use classes makes sure we can choose our color scheme
+pygmentsUseClasses: true
+pygmentsOptions: "linenos=table"
+
+theme: "hit-training-theme"

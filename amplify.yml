@@ -15,7 +15,7 @@ frontend:
         - hugo version
         - hugo
   artifacts:
-    baseDirectory: /public/
+    baseDirectory: /src/public/
     files:
       - '**/*'
   cache:

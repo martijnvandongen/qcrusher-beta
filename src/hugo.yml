@@ -1,4 +1,4 @@
-baseURL: "https://martijnvandongen.github.io/qcrusher-beta/"
+baseURL: ""
 title: "QCrusher.com"
 markup:
   goldmark:

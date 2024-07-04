@@ -1,3 +1,3 @@
 [submodule "src/themes/hit-training-theme"]
 	path = src/themes/hit-training-theme
-	url = git@github.com:martijnvandongen/hit-training-theme.git
+	url = https://github.com/martijnvandongen/hit-training-theme.git
